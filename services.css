@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body,
+html {
+    width: 100%;
+	height: 100%;
+}
+
+body, p {
+	color: #667077; 
+	font: 400 1rem/1.625rem "Poppins", sans-serif;
+}
+h1 {
+	color: #252936;
+	font-weight: 500;
+	font-size: 3.25rem;
+	line-height: 4rem; /* Définit la hauteur de ligne de l'élément à 4 rem (root em) , cette valeur est calculée en multipliant la valeur en rem par la taille de police de l'élément racine (qui est la page HTML) */
+}
+
+h2 {
+	color: #252936;
+	font-weight: 500;
+	font-size: 2.5rem;
+	line-height: 3.25rem;
+}
+
+h3 {
+	color: #252936;
+	font-weight: 500;
+	font-size: 1.875rem;
+	line-height: 2.5rem;
+}
+
+h4 {
+	color: #f756bc;
+	font-weight: 500;
+	font-size: 1.5rem;
+	line-height: 2rem;
+}
+#slogan{
+	margin-bottom: 30px;
+	margin-top: -10px;
+	font-weight: 700;
+}
+
+.btnC {
+	display: inline-block;
+	padding: 1.875rem 3rem 1.875rem 3rem;
+	border: 2px solid #252936; /* Définit une bordure solide de 2 pixels d'épaisseur autour de l'élément et coloré */
+	border-radius: 32px;
+	color: #252936;
+	font-weight: 400; /* Définit l'épaisseur de la police à 400 (normal) */
+	font-size: 1rem;
+	line-height: 0;
+	text-decoration: none;
+	transition: all 0.2s; /* Définit une transition de 0.2 secondes pour toutes les propriétés qui changent */
+}
+
+.btnC:hover {
+	background-color: #252936;
+	color: #ffffff;
+	text-decoration: none; /* Enlève la décoration de soulignement sur le texte */
+}
+
+.p-large {
+	font-size: 200%;
+	line-height: 2.5rem;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.serv{
+	font-size: 200%;
+	line-height: 2.5rem;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+img {
+	max-width: 100%; /* Définit la largeur maximale d'un élément à 100% de la largeur de son conteneur parent */
+	vertical-align: middle; /* résout un écart à l'intérieur du conteneur d'image */
+}
+
+a {
+	color: #667077;
+	text-decoration: underline; /* Définit une ligne sous le lien clickable pour le distingué */
+}
+
+a:hover {
+	color: #667077;
+	text-decoration: underline;
+}
+
+header {
+	padding-top:15rem;
+	padding-bottom: 9rem;
+	background-image:url(backgrd-img.png);
+	background-size: cover;
+	text-align: center;
+}
+
+header .h1-large {
+	margin-bottom: 2.5rem;
+	color: #f756bc;
+}
+
+header .btnC {
+	border: 2px solid #f756bc;
+	color: #f756bc;
+}
+
+header .btnC:hover {
+	background-color: #f756bc;
+	border: 2px solid #e9c4f2;
+}
+
+a.signUpBtn:hover {
+    color: #fff;
+    background: #f2ecee;
+}
+
+.services {
+	padding-top: 5rem;
+	padding-bottom: 6rem;
+	text-align: center;
+}
+
+.services .p-large {
+	margin-bottom: 5rem;
+}
+
+.services h4 {
+	margin-bottom: 3rem;
+}
+.contact {
+	padding-top: 9rem;
+	padding-bottom: 9rem;
+	text-align: center;
+}
+
+.contact h2 {
+	margin-bottom: 0.875rem;
+}
+
+.contact p {
+	margin-bottom: 3.75rem;
+}
+
+.contact form {
+	text-align: left;
+}
+ 
+.btnC:hover {
+	background-color: #252936;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+form{
+	margin:  0 250px 0 250px;
+}
+
+.form-group {
+	position: relative;
+	margin-bottom: 1.375rem;
+}
+/* le style suivant va étre appliqué sur les deux classes séparées par ,*/
+.form-control-input,
+.form-control-textarea {
+	width: 100%;
+	padding-top: 1rem;
+	padding-bottom: 15px;
+	padding-left: 1.5rem;
+	border: 2px solid #f756bc;
+	background-color: #ffffff;
+	border-radius: 22px;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	font-family: "Poppins";
+}
+
+.form-control-textarea {
+	display: block;
+	height: 14rem;  /* Affiche l'élément en tant que bloc avec une hauteur de 14rem */
+}
+
+.form-control-input:focus,
+.form-control-textarea:focus {
+	border: 2px solid #d7d8e1;
+	outline: none; /* Supprime la bordure bleue sur le focus */
+}
+
+.form-control-input:hover,
+.form-control-textarea:hover {
+	border: 2px solid #d7d8e1;
+}
+
+.form-control-submit-button {
+	display: inline-block;
+	width: 25%;
+	height: 3.75rem;
+	border: 2px solid #6495ED;
+	border-radius: 22px;
+	background-color: #6495ED;
+	color: #ffffff;
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 0;
+	font-family: "Poppins";
+	cursor: pointer; /* Définit l'apparence du curseur de la souris lorsqu'il survole l'élément en une main pointant vers le haut */
+	transition: all 0.2s;
+	/*display: flex;*/
+	margin-left: 75%;
+}
+
+footer{
+    background-color: hsl(210, 35%, 90%); /* Définit la couleur de fond en utilisant une valeur HSL (Hue, Saturation, Luminance) avec un ton de couleur de 210 degrés, une saturation de 35% et une luminance de 90% */
+    color:white;
+   /* margin-top: -180px;*/
+    padding-bottom: 50px;
+}
+
+.main-footer{
+    padding: 2% 5% 2% 5%;
+    display: flex; /* Définit l'affichage des éléments en utilisant un modèle de disposition flexible */
+    flex-direction: column; /* Définit l'orientation de la disposition des éléments de manière verticale (de haut en bas) */
+    gap:50px; /* Définit l'espace entre les éléments */
+    padding-top:200px;
+}
+.main-footer .logo{
+	margin-top: -170px; 
+	width: 250px; 
+    max-height: 100%; /* Définit la hauteur maximale d'un élément à 100% de la hauteur de son conteneur parent */
+}
+
+.stuff{
+    display: flex;
+    justify-content: space-between; /* Aligne les éléments avec un espacement égal entre eux */
+}
+
+.location{
+    display:flex;
+    gap:10px;
+}
+.about-us{
+	font-size: small;
+	font-weight: 700; 
+	margin-top: -75px;
+	font-family: "popins", sans-serif;
+}
+.cartes{
+	text-align: center;
+	transition: 0.5s; /* Définit une transition de 0.5 secondes pour les propriétés qui changent */
+	margin: 0;
+	padding: 0;
+	font-family: "popins", sans-serif;
+}
+
+.row{
+	padding-top: 50px;
+	width: 1000px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.box{
+	width: 320px;
+	height: 500px;
+	background: hsl(210, 35%, 90%);
+	border-radius: 20px;
+}
+
+.box img{
+	width: 250px;
+	margin-top: 30px;
+	border-radius: 35px;
+}
+.box h3{
+	font-size: 25px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: #6495ED;
+
+}
+.box p{
+	color: #252936;
+	margin-top: 5px;
+	margin-left: 16px;
+	margin-right: 16px;
+	line-height: 25px;
+}
+.box .btnP{
+	width: 150px;
+	height: 40px;
+	background: #f756bc;
+	border-radius: 10px;
+	border: none;
+	color: #fff;
+	font-size: 17px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 30px;
+}
+.box .btnP:hover{
+	background: #fff;
+	color: #6495ED;
+	border: 1px solid #6495ED;
+}
+.location img{
+    width:20px;
+}
+ .logo-top{
+width: 150px;
+height: 10px;
+margin-left:-1100px;
+margin-top:-15px;
+margin-bottom: -30px;
+}
+
+.icon{
+	width: 20%;
+}
+
+.part1{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+.part{
+	margin-top: -80px; /* Déplace l'élément vers le haut de 80 pixels par rapport à son emplacement initial */
+}
+.part #CTA{
+	font-weight: 700;
+}
+
+.icons{
+    font-size:1.5rem;
+    display: flex;
+    flex-direction: row;
+	color: #f756bc;
+}
+
+.icons p{
+	margin-top: -80px;
+	font-weight: 700;
+}
+.fa-facebook{
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.fa-facebook:hover{
+    transform: scale(1.1); 
+	/* Applique une transformation d'échelle de 1.1 sur l'élément */
+}
+
+.fa-twitter{
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.fa-twitter:hover{
+    transform: scale(1.1);
+}
+
+.fa-instagram{
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.fa-instagram:hover{
+    transform: scale(1.1);
+}
+
+.copyright{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.copyright a{
+    color:#f756bc;
+}
+
